@@ -21,7 +21,7 @@ const Connpass = function(){
       axios.get(
         `${this.api()}/event/`,
         {
-          params: options
+          params: options || {}
         }
       ).then((res)=>{
         resolve(res.data);

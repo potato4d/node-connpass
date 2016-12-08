@@ -1,6 +1,6 @@
 {
-  "name": "node-connpass",
-  "version": "1.0.0",
+  "name": "connpass",
+  "version": "0.1.0",
   "description": "The connpass API wrapper library for Node.js",
   "main": "index.js",
   "scripts": {
