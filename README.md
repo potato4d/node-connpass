@@ -13,7 +13,7 @@ $ npm install -S connpass
 
 #### Worning
 
-The connpass API is not supported CORS.
+The connpass API is not supported CORS.  
 If you using this module in frontend, Use JSONP.
 
 ##### JSONP Sample URL
