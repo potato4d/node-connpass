@@ -11,6 +11,17 @@ $ npm install -S connpass
 
 ## Usage
 
+#### Worning
+
+The connpass API is not supported CORS.
+If you using this module in frontend, Use JSONP.
+
+##### JSONP Sample URL
+
+```
+https://connpass.com/api/v1/event/?callback=callback
+```
+
 #### connpass.get({options})
 
 Get events for connpass API.  
