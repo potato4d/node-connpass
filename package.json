@@ -1,22 +1,20 @@
 {
-  "name": "connpass",
-  "version": "0.1.0",
-  "description": "The connpass API wrapper library for Node.js",
+  "name": "node-connpass",
+  "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/potato4d/node-connpass.git"
-  },
-  "author": "TAKUMA Hanatani (Potato4d)",
+  "repository": "ssh://git@github.com/potato4d/node-connpass.git",
+  "author": "HANATANI Takuma <mail@potato4d.me>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/potato4d/node-connpass/issues"
-  },
-  "homepage": "https://github.com/potato4d/node-connpass#readme",
   "dependencies": {
-    "axios": "^0.15.3"
+    "axios": "^0.19.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.12",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
   }
 }
