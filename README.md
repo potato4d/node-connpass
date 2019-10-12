@@ -19,6 +19,10 @@ async function run() {
 }
 ```
 
+## Type definition
+
+See [here](https://github.com/potato4d/node-connpass/blob/master/src/types.ts).
+
 ## LICENCE
 
 MIT
