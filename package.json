@@ -1,6 +1,6 @@
 {
   "name": "connpass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/src/index.js",
   "repository": "ssh://git@github.com/potato4d/node-connpass.git",
   "author": "HANATANI Takuma <mail@potato4d.me>",
