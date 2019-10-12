@@ -1,7 +1,7 @@
 {
   "name": "node-connpass",
   "version": "1.0.0",
-  "main": "lib/index.js",
+  "main": "lib/src/index.js",
   "repository": "ssh://git@github.com/potato4d/node-connpass.git",
   "author": "HANATANI Takuma <mail@potato4d.me>",
   "license": "MIT",
