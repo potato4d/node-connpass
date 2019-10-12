@@ -5,13 +5,13 @@ The connpass API client library for Node.js.
 ## Installation
 
 ```bash
-$ yarn add node-connpass
+$ yarn add connpass
 ```
 
 ## Usage
 
 ```ts
-import Connpass from 'node-connpass'
+import Connpass from 'connpass'
 
 async function run() {
   const client = new Connpass()
