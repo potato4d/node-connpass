@@ -1,6 +1,5 @@
-import querystring from 'querystring'
 import axios, { AxiosInstance, AxiosResponse } from 'axios'
-import { GetEventsResponse, GetEventsQuery } from "./types"
+import { GetEventsResponse, GetEventsQuery } from './types'
 
 class Connpass {
   private APIClient: AxiosInstance
@@ -15,19 +14,20 @@ class Connpass {
     })
   }
 
-  async getEvents(query?: GetEventsQuery): Promise<GetEventsResponse & { response: AxiosResponse<GetEventsResponse> }> {
+  async getEvents(
+    query?: GetEventsQuery
+  ): Promise<
+    GetEventsResponse & { response: AxiosResponse<GetEventsResponse> }
+  > {
     try {
-      const response = await this.APIClient.get<GetEventsResponse>(
-        '/event',
-        {
-          params: query
-        }
-      )
+      const response = await this.APIClient.get<GetEventsResponse>('/event', {
+        params: query
+      })
       return {
         response,
         ...response.data
       }
-    } catch(e) {
+    } catch (e) {
       return Promise.reject(e)
     }
   }

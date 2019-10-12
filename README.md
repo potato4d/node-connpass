@@ -1,50 +1,24 @@
-# node-connpass
-The [connpass](https://connpass.com/) API wrapper library for Node.js.
+# Connpass API Adapter for Node.js
+
+The connpass API client library for Node.js.
 
 ## Installation
 
-Install on NPM.
-
 ```bash
-$ npm install -S connpass
+$ yarn add node-connpass
 ```
 
 ## Usage
 
-#### Warning
+```ts
+import Connpass from 'node-connpass'
 
-The connpass API is not supported CORS.  
-If you using this module in frontend, Use JSONP.
-
-##### JSONP Sample URL
-
-```
-https://connpass.com/api/v1/event/?callback=callback
+async function run() {
+  const client = new Connpass()
+  const { events } = await client.getEvents()
+}
 ```
 
-#### connpass.get({options})
+## LICENCE
 
-Get events for connpass API.  
-Options list is [here](https://connpass.com/about/api/).
-
-It's Promise function, You should use `then()` and `catch()`.
-
-```js
-const connpass = require("connpass");
-connpass.get()
-.then((events)=>{
-  console.log(events);
-})
-.catch((error)=>{
-  console.log(error);
-});
-```
-
-#### connpass.version()
-
-Return version of this library.
-
-```js
-const connpass = require("connpass");
-connpass.version(); // 0.1.0
-```
+MIT
