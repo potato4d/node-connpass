@@ -27,13 +27,13 @@ export type ConnpassEvent = {
 
   event_type: string
 
-  series: Group[]
+  series: Group
 
   address: string
   place: string
-  lat: number
-  lon: number
-  owner_id: string
+  lat: string
+  lon: string
+  owner_id: number
   owner_nickname: string
   owner_display_name: string
   accepted: number
