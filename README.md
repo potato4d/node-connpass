@@ -1,4 +1,4 @@
-> **This library is no longer maintained**
+> **This library is no longer maintained**  
 > connpass has ended free API access for individuals. Therefore, this library no longer works.
 
 # Connpass API Adapter for Node.js
